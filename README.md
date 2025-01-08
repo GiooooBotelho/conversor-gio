@@ -2,6 +2,8 @@
 
 [![Versão](https://img.shields.io/badge/vers%C3%A3o-2.0-blue.svg)](https://shields.io/)
 
+[![python](https://img.shields.io/badge/python-3.13.0-blue.svg)](https://shields.io/)
+
 ## 🚀 Sobre o Projeto
 
 Olá a todos! 🙋‍♂️
