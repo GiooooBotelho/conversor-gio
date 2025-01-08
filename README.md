@@ -1,8 +1,6 @@
 # Conversor de Texto em Áudio - Giovanne
 
-[![Versão](https://img.shields.io/badge/vers%C3%A3o-2.0-blue.svg)](https://shields.io/)
-
-[![python](https://img.shields.io/badge/python-3.13.0-blue.svg)](https://shields.io/)
+[![Versão](https://img.shields.io/badge/vers%C3%A3o-2.0-blue.svg)](https://shields.io/) [![python](https://img.shields.io/badge/python-3.12.2-blue.svg)](https://shields.io/)
 
 ## 🚀 Sobre o Projeto
 
@@ -31,7 +29,7 @@ Estou extremamente animado em compartilhar com vocês a versão 2.0 do meu proje
 
 Antes de começar, você precisará ter instalado:
 
-*   Python 3.x
+*   Python 3.12.2
 *   As bibliotecas listadas no arquivo `requirements.txt`
 *   Uma conta da Microsoft Azure e as chaves de API para os serviços Speech e Translator (veja a seção "Configuração das Chaves de API" abaixo).
 
