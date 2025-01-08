@@ -62,8 +62,31 @@ Antes de começar, você precisará ter instalado:
 
 Para usar os serviços da Microsoft Azure, você precisará configurar suas chaves de API:
 
+**1. Criar uma conta no Azure:**
+
+* Acesse o portal do Azure: [portal.azure.com](https://portal.azure.com) 
+* Se você ainda não tem uma conta, crie uma gratuitamente.
+
+**2. Criar recursos para os serviços:**
+
+* **Speech service:**
+    * No portal do Azure, procure por "Speech" e selecione "Speech".
+    * Clique em "Criar".
+    * Escolha uma assinatura, crie um novo grupo de recursos e dê um nome ao seu recurso.
+    * Selecione a região mais próxima de você.
+    * Escolha o plano de preços (o plano gratuito é uma boa opção para começar).
+    * Clique em "Revisar + criar" e depois em "Criar".
+    * Após a criação, acesse o recurso e vá em "Chaves e Ponto de Extremidade".
+    * Copie a chave (uma das duas listadas) e a região. Anote esses valores.
+
+* **Translator service:**
+    * No portal do Azure, procure por "Translator" e selecione "Translator".
+    * Repita os passos acima para criar o recurso do Translator.
+    * Copie a chave e a região. Anote esses valores.
+
+**3. Criar o arquivo `.env`:**
 1. Crie um arquivo chamado `.env` na raiz do projeto.
-2. Abra o arquivo `.env` e adicione suas chaves de API e a região, como mostrado abaixo:
+2. Abra o arquivo `.env` e adicione suas chaves de API e a região, substituindo os valores pelas chaves e região que você obteve, como mostrado abaixo:
 
     ```
     SPEECH_SUBS_KEY=sua_chave_do_speech_service
@@ -73,6 +96,11 @@ Para usar os serviços da Microsoft Azure, você precisará configurar suas chav
     ```
 
     Substitua `sua_chave_do_speech_service`, `sua_chave_do_translator_text` e `sua_regiao` pelas informações da sua conta do Azure.
+
+**4. Proteger suas chaves:**
+
+* **Segurança:** Mantenha suas chaves de API em segredo. Não as compartilhe publicamente e não as inclua diretamente no código-fonte do seu projeto.
+* **.gitignore:** Adicione o arquivo `.env` ao seu `.gitignore` para que ele não seja incluído no seu repositório Git.
 
 ## ▶️ Como Executar
 
