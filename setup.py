@@ -20,7 +20,7 @@ build_exe_options = {
 }
 
 executables = [
-    Executable("azure_pyqt6.py", base=base, icon="QIcon_window.ico")
+    Executable("azure_pyqt6.py", base=base, icon="QIcon_window.ico", target_name="Conversor de Texto em Áudio - Giovanne.exe")
 ]
 
 setup(
