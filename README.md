@@ -76,13 +76,16 @@ Para usar os serviços da Microsoft Azure, você precisará configurar suas chav
     * Selecione a região mais próxima de você.
     * Escolha o plano de preços (o plano gratuito é uma boa opção para começar).
     * Clique em "Revisar + criar" e depois em "Criar".
-    * Após a criação, acesse o recurso e vá em "Chaves e Ponto de Extremidade".
+    * Após a criação do recurso, acesse-o no portal do Azure.
+    * No menu à esquerda, em "Gerenciamento de recursos", clique em "Chaves e Ponto de Extremidade".
     * Copie a chave (uma das duas listadas) e a região. Anote esses valores.
+    * A `SPEECH_SUBS_KEY` será essa chave que você copiou.
+    * A `REGION` será a região que você selecionou ao criar o recurso.
 
 * **Translator service:**
     * No portal do Azure, procure por "Translator" e selecione "Translator".
     * Repita os passos acima para criar o recurso do Translator.
-    * Copie a chave e a região. Anote esses valores.
+    * Copie a chave e a região. A `TRANSL_SUBS_KEY` será essa chave que você copiou.
 
 **3. Criar o arquivo `.env`:**
 1. Crie um arquivo chamado `.env` na raiz do projeto.
