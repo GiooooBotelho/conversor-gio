@@ -38,8 +38,8 @@ Antes de começar, você precisará ter instalado:
 1. **Clone o repositório:**
 
     ```bash
-    git clone <URL do seu repositório>
-    cd <nome do seu repositório>
+    git clone https://github.com/GiooooBotelho/conversor-gio.git
+    cd conversor-gio
     ```
 
 2. **Instale as dependências:**
@@ -119,4 +119,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](L
 
 Giovanne - giovannebotelho1@gmail.com
 
-Link do Projeto: [URL do seu repositório]
+Link do Projeto: [\[URL do seu repositório\]](https://github.com/GiooooBotelho/conversor-gio.git)
