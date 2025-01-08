@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>noturn_on_off_icons.png</file>
+    <file>start_record_icon.png</file>
+    <file>stop_record_icon.png</file>
+    <file>QIcon_alertNOK.png</file>
+    <file>QIcon_alertOK.png</file>
+    <file>QIcon_window.png</file>
+  </qresource>
+</RCC>

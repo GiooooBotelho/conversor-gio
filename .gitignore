@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.vscode/
+build/
+dist/
+azure_pyqt6/
+*.exe

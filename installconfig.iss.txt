@@ -1,0 +1,22 @@
+[Setup]
+AppName=Conversor de Texto em Áudio
+AppVersion=2.0
+DefaultDirName={pf}\Conversor de Texto em Áudio
+DefaultGroupName=Conversor de Texto em Áudio
+OutputDir=E:\Python\Azure Pyqt6\dist
+OutputBaseFilename=instalador_conversor_texto_audio
+Compression=lzma2
+SolidCompression=yes
+SetupIconFile=E:\Python\Azure Pyqt6\QIcon_window.ico
+
+[Files]
+Source: "E:\Python\Azure Pyqt6\dist\Conversor de Texto em Áudio.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\Python\Azure Pyqt6\Microsoft.CognitiveServices.Speech.core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\Python\Azure Pyqt6\QIcon_alertOK.png"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\Python\Azure Pyqt6\QIcon_alertNOK.png"; DestDir: "{app}"; Flags: ignoreversion
+
+[Icons]
+Name: "{group}\Conversor de Texto em Áudio"; Filename: "{app}\Conversor de Texto em Áudio.exe"
+
+[Run]
+Filename: "{app}\Conversor de Texto em Áudio.exe"; Description: "Executar Conversor de Texto em Áudio"; Flags: nowait postinstall skipifsilent
