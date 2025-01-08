@@ -1,5 +1,5 @@
-azure-cognitiveservices-speech==1.36.0
+azure-cognitiveservices-speech
 python-dotenv
-PyQt6==6.6.1
+PyQt6
 requests
 cx-Freeze
