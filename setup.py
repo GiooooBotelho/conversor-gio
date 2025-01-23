@@ -9,18 +9,18 @@ if sys.platform == "win32":
 build_exe_options = {
     "packages": ["os", "sys", "PyQt6", "requests", "uuid", "tempfile", "subprocess", "shutil", "azure.cognitiveservices.speech"],
     "include_files": [
-        ("QIcon_window.png", "QIcon_window.png"),
-        ("QIcon_alertOK.png", "QIcon_alertOK.png"),
-        ("QIcon_alertNOK.png", "QIcon_alertNOK.png"),
-        ("start_record_icon.png", "start_record_icon.png"),
-        ("stop_record_icon.png", "stop_record_icon.png"),
-        ("noturn_on_off_icons.png", "noturn_on_off_icons.png")
+        ("img_source/QIcon_window.png", "img_source/QIcon_window.png"),
+        ("img_source/QIcon_alertOK.png", "img_source/QIcon_alertOK.png"),
+        ("img_source/QIcon_alertNOK.png", "img_source/QIcon_alertNOK.png"),
+        ("img_source/start_record_icon.png", "img_source/start_record_icon.png"),
+        ("img_source/stop_record_icon.png", "img_source/stop_record_icon.png"),
+        ("img_source/noturn_on_off_icons.png", "img_source/noturn_on_off_icons.png")
     ],
     "includes": ["atexit"]
 }
 
 executables = [
-    Executable("azure_pyqt6.py", base=base, icon="QIcon_window.ico", target_name="Conversor de Texto em Áudio - Giovanne.exe")
+    Executable("main.py", base=base, icon="img_source/QIcon_window.ico", target_name="Conversor de Texto em Áudio - Giovanne.exe")
 ]
 
 setup(

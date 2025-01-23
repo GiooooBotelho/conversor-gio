@@ -1,5 +1,0 @@
-Olá, sejam bem-vindos ao conversor de texto em áudio!
-
-Está é a versão de testes. É um prazer ter você aqui! Não se esqueça de contribuir com o projeto. Muito obrigado!
-
-Giovanne Botelho

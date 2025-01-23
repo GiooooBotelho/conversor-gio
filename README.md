@@ -29,7 +29,7 @@ Estou extremamente animado em compartilhar com vocês a versão 2.0 do meu proje
 
 Antes de começar, você precisará ter instalado:
 
-*   Python 3.12.2
+*   **Python 3.12.2**
 *   As bibliotecas listadas no arquivo [requirements.txt](requirements.txt)
 *   Uma conta da Microsoft Azure e as chaves de API para os serviços Speech e Translator (veja a seção "Configuração das Chaves de API" abaixo).
 
@@ -42,21 +42,35 @@ Antes de começar, você precisará ter instalado:
     cd conversor-gio
     ```
 
-2. **Instale as dependências:**
+2. **Crie um ambiente virtual (recomendado):**
+    * **É altamente recomendável usar um ambiente virtual para isolar as dependências do projeto.**
+    * **No Windows, usando `py` launcher:**
+
+        ```bash
+        py -3.12 -m venv .venv
+        ```
+
+    * **Ative o ambiente virtual:**
+
+        ```bash
+        .venv\Scripts\activate
+        ```
+
+3. **Instale as dependências:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Modificar a Interface (opcional):**
+4. **Modificar a Interface (opcional):**
    * Se você quiser modificar a interface gráfica, você pode editar o arquivo `meu_layout.ui` usando o **Qt Designer**.
    * Depois de modificar o arquivo `.ui`, você precisará convertê-lo para um script Python. Use o seguinte comando no terminal, estando na pasta onde se encontra o arquivo `meu_layout.ui`:
 
-     ```bash
-     pyuic6 -x meu_layout.ui -o meu_layout.py
-     ```
+        ```bash
+        pyuic6 -x meu_layout.ui -o meu_layout.py
+        ```
 
-     Isso atualizará o arquivo `meu_layout.py` com as suas modificações.
+    Isso atualizará o arquivo `meu_layout.py` com as suas modificações.
 
 ## ⚙️ Configuração das Chaves de API
 
@@ -64,7 +78,7 @@ Para usar os serviços da Microsoft Azure, você precisará configurar suas chav
 
 **1. Criar uma conta no Azure:**
 
-* Acesse o portal do Azure: [portal.azure.com](https://portal.azure.com) 
+* Acesse o portal do Azure: [portal.azure.com](https://portal.azure.com)
 * Se você ainda não tem uma conta, crie uma gratuitamente.
 
 **2. Criar recursos para os serviços:**
@@ -89,7 +103,7 @@ Para usar os serviços da Microsoft Azure, você precisará configurar suas chav
 
 **3. Criar o arquivo `.env`:**
 1. Crie um arquivo chamado `.env` na raiz do projeto.
-2. Abra o arquivo `.env` e adicione suas chaves de API e a região, substituindo os valores pelas chaves e região que você obteve, como mostrado abaixo:
+2. Abra o arquivo `.env` e adicione suas chaves de API e a região, como mostrado abaixo:
 
     ```
     SPEECH_SUBS_KEY=sua_chave_do_speech_service
@@ -107,25 +121,32 @@ Para usar os serviços da Microsoft Azure, você precisará configurar suas chav
 
 ## ▶️ Como Executar
 
-Para executar o aplicativo, use o seguinte comando no terminal:
+**1. Certifique-se de que o ambiente virtual esteja ativado.**
 
     ```bash
-    python azure_pyqt6.py
+    .venv\Scripts\activate
+    ```
+
+**2. Para executar o aplicativo, use o seguinte comando no terminal:**
+
+    ```bash
+    python main.py
     ```
 
 ## 📦 Como Gerar o Executável (Avançado)
+
 Se você quiser criar um arquivo executável (.exe) para distribuir o aplicativo sem que os usuários precisem instalar o Python e as dependências, siga estas etapas:
 
-Certifique-se de ter o cx_Freeze instalado. Se não tiver, instale-o com o seguinte comando:
+**1. Certifique-se de ter o `cx_Freeze` instalado. Se não tiver, instale-o com o seguinte comando:**
 
     ```bash
     pip install cx_Freeze
     ```
-    
-Execute o script setup.py usando o seguinte comando no terminal, estando na pasta raiz do projeto onde o setup.py se encontra:
+
+**2. Execute o script `setup.py` usando o seguinte comando no terminal, estando na pasta raiz do projeto onde o `setup.py` se encontra:**
 
     ```bash
-    python setup.py build
+   python setup.py build
     ```
 
 Isso criará uma pasta build contendo o executável e os arquivos necessários.
@@ -148,6 +169,8 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](L
 
 ## 📫 Contato
 
-Giovanne - giovannebotelho1@gmail.com
+Giovanne Botelho - giovannebotelho1@gmail.com
+
+LinkedIn: [\[LinkedIn\]](https://www.linkedin.com/in/giovanne-botelho/)
 
 Link do Projeto: [\[conversor-gio\]](https://github.com/GiooooBotelho/conversor-gio.git)

@@ -1,5 +1,6 @@
 azure-cognitiveservices-speech
 python-dotenv
 PyQt6
+PySide6
 requests
 cx-Freeze

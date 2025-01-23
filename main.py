@@ -1,7 +1,7 @@
-from PyQt6 import QtGui, QtCore
+from PyQt6 import QtCore
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from PyQt6.QtGui import QIcon, QStandardItemModel, QStandardItem
-from PyQt6.QtCore import QMetaObject, Qt, Q_ARG
+from PyQt6.QtCore import Qt
 import azure.cognitiveservices.speech as speechsdk
 import tempfile
 import subprocess
@@ -17,7 +17,7 @@ def resource_path(relative_path):
     """Retorna o caminho absoluto do recurso, para uso no modo 'congelado'."""
     if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
-    return os.path.join(os.path.abspath("."), relative_path)
+    return os.path.join(os.path.abspath("."), "img_source", relative_path)
 
 def texto_audio_azure_sslm(texto, voz, nome_arquivo=None, velocidade="0%", tom="0%", estilo_fala='default', intensidade_estilo="1", clareza="0dB", parent=None, effect=None):
     speech_config = speechsdk.SpeechConfig(subscription=SPEECH_SUBS_KEY, region=REGION)

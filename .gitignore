@@ -1,7 +1,26 @@
-.env
+# Pastas
 __pycache__/
+.venv
 .vscode/
 build/
 dist/
-azure_pyqt6/
+main/
+
+# Arquivos de configuração local
+.env
+
+# Executáveis
 *.exe
+
+# Logs
+*.log
+
+# Planilhas de resultados
+*.xlsx
+
+# Outros arquivos temporários
+*.pyc
+*.pyo
+
+# Outros/testes
+tests/
