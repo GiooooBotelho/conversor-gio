@@ -146,7 +146,7 @@ Se você quiser criar um arquivo executável (.exe) para distribuir o aplicativo
 **2. Execute o script `setup.py` usando o seguinte comando no terminal, estando na pasta raiz do projeto onde o `setup.py` se encontra:**
 
     ```bash
-   python setup.py build
+    python setup.py build
     ```
 
 Isso criará uma pasta build contendo o executável e os arquivos necessários.
